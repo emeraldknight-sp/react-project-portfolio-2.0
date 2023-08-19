@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+<h1 align="center"> Portfólio de Projetos </h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+Este projeto é uma vitrine versátil que reúne meus projetos e habilidades de desenvolvimento, oferecendo uma visão abrangente do meu trabalho. Com uma abordagem centrada em boas práticas de design e desenvolvimento, cada projeto é apresentado de forma envolvente, destacando as tecnologias e soluções empregadas. Convido você a explorar essa jornada através do meu portfólio, que reflete meu compromisso com a excelência técnica e estética na criação de experiências digitais memoráveis.
+</p>
 
-## Available Scripts
+<p align="center">
+  <a href="#technologies">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#project">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#licence">Licença</a>
+</p>
 
-In the project directory, you can run:
+<p align="center">
+  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
+</p>
 
-### `npm start`
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<p align="center">
+  <img alt="logo" src=".github/project.png" width="20%">
+</p>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Tecnologias
 
-### `npm test`
+<p id="technologies">Esse projeto foi desenvolvido com as seguintes tecnologias:</p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- HTML5, CSS3, JS ES6+
+- [Node e Yarn](https://nodejs.org/)
+- [React.JS](https://reactjs.org/)
+- [Create react-app](https://create-react-app.dev/)
+- [Typescript](https://www.typescriptlang.org/docs)
+- [Styled-components](https://styled-components.com/docs)
+- [React-icons](https://react-icons.github.io/react-icons/)
 
-### `npm run build`
+## 💻 Projeto
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p id="project">
+Este portfólio foi desenvolvido com um conjunto de tecnologias modernas que proporcionam uma experiência excepcional. Utilizei o React como base, aproveitando os poderosos recursos do framework para criar componentes reutilizáveis e uma interface dinâmica. A estilização foi feita com Styled Components, permitindo a criação de estilos encapsulados e responsivos. A biblioteca React Icons adicionou ícones elegantes aos elementos. Tudo isso, combinado com o gerenciamento de pacotes pelo yarn e o bundling eficiente proporcionado pelo Webpack, resultou em um portfólio otimizado e responsivo que destaca minha paixão pelo desenvolvimento e a busca constante por excelência.
+</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🏡 Comandos de execução no projeto
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Instalação das dependências do projeto
 
-### `npm run eject`
+```sh
+yarn
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Teste da aplicação em ambiente de desenvolvimento
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```sh
+yarn start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Build da aplicação
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```sh
+yarn build
+```
 
-## Learn More
+## 🔖 Layout
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Você pode [visualizar o layout do projeto](https://www.figma.com/file/3FdGj0ciXLNiWR5ryAEaY9/Portfolio---V.1?type=design&node-id=0-1&mode=design&t=0DftEz2BMTb5eEA0-0) clicando aqui. É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<p id="layout">
+  <img src=".github/layout.png" alt="layout" >
+</p>
 
-### Code Splitting
+## 📝 Licença
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p id="licence">Esse projeto está sob a licença MIT.</p>
