@@ -27,38 +27,6 @@ export const StyledPresentationSection = styled.section`
     line-height: var(--line-height-md);
   }
 
-  .presentation__article-button {
-    width: 100%;
-    height: 44px;
-    padding: 8px 24px;
-    border: 1px solid var(--brand-1);
-    border-radius: 8px;
-    cursor: pointer;
-  }
-
-  .presentation__article-button--contained {
-    background-color: var(--gray-5);
-    color: var(--gray-1);
-  }
-
-  .presentation__article-button--text {
-    background-color: var(--transparent);
-    color: var(--white);
-  }
-
-  .presentation__article-button--outlined {
-    background-color: var(--gray-5);
-    color: var(--gray-1);
-  }
-
-  .presentation__article-button-text {
-    font-size: var(--text-md);
-    font-family: var(--inter-tipography);
-    font-weight: 600;
-    line-height: var(--line-height-md);
-  }
-
-  .presentation__article-text-group,
   .presentation__article-button-group {
     display: flex;
     flex-direction: column;
@@ -68,21 +36,10 @@ export const StyledPresentationSection = styled.section`
     width: 100%;
   }
 
-  @media (min-width: 768px) {
-    .presentation__article-button {
-      width: 50%;
-    }
-  }
-
   @media (min-width: 1024px) {
     .presentation__article {
       width: 50%;
       height: 350px;
-    }
-
-    .presentation__article-button-group {
-      display: flex;
-      flex-direction: row;
     }
   }
 `;
@@ -113,6 +70,20 @@ export const StyledTechnologiesSection = styled.section`
     gap: 40px;
   }
 
+  .technologies__article-list-item::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  .technologies__article-list-item::-webkit-scrollbar-track {
+    background: var(--gray-4);
+  }
+
+  .technologies__article-list-item::-webkit-scrollbar-thumb {
+    background-color: var(--gray-2);
+    border-radius: 20px;
+    border: 5px solid var(--gray-4); 
+  }
+
   .technologies__article-item {
     background-color: var(--white);
     border: 1px solid var(--white);
@@ -130,12 +101,25 @@ export const StyledTechnologiesSection = styled.section`
 export const StyledProjectsSection = styled.section`
   padding: 32px 0;
 
+  @media (min-width: 1024px) {
+    padding: 88px 0;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: row;
+  }
+
   .projects__article {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 32px;
+
+    @media (min-width: 1024px) {
+      width: 50%;
+    }
   }
 
   .projects__article-title {
@@ -146,7 +130,7 @@ export const StyledProjectsSection = styled.section`
     color: var(--gray-2);
   }
 
-  .projects__article-description {
+  .projects__article-text {
     font-size: var(--text-2xl);
     font-family: var(--lexend-tipography);
     font-weight: 500;
@@ -156,6 +140,31 @@ export const StyledProjectsSection = styled.section`
     span {
       color: var(--brand-1);
     }
+  }
+
+  .projects__article--cta {
+    display: none;
+    padding-right: 90px;
+
+    @media (min-width: 1024px) {
+      display: flex;
+    }
+  }
+
+  .projects__article-title--cta {
+    font-size: var(--text-xl);
+    font-family: var(--lexend-tipography);
+    font-weight: 600;
+    line-height: var(--line-height-xl);
+    color: var(--gray-1);
+  }
+
+  .projects__article-text--cta {
+    font-size: var(--text-md);
+    font-family: var(--inter-tipography);
+    font-weight: 500;
+    line-height: var(--line-height-md);
+    color: var(--gray-2);
   }
 
   .projects__article-item-list {
