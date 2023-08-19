@@ -51,6 +51,20 @@ table {
 	border-spacing: 0;
 }
 
+body::-webkit-scrollbar {
+	width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+	background: var(--gray-5);
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: var(--gray-3);
+	border-radius: 20px;
+	border: 2px solid var(--gray-4); 
+}
+
 
 :root {
 	--white: #FFFFFF;
