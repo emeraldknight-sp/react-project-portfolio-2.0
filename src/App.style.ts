@@ -13,6 +13,12 @@ export const StyledPresentationSection = styled.section`
     gap: 32px;
   }
 
+  .presentation__article-text-group {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
   .presentation__article-title {
     font-size: var(--text-3xl);
     font-family: var(--lexend-tipography);
@@ -37,6 +43,11 @@ export const StyledPresentationSection = styled.section`
   }
 
   @media (min-width: 1024px) {
+    .presentation__article-button-group {
+      display: flex;
+      flex-direction: row;
+    }
+
     .presentation__article {
       width: 50%;
       height: 350px;
