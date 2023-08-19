@@ -1,9 +1,14 @@
-import { FiMenu } from "react-icons/fi";
-import { Container } from "../Container";
-import { StyledHeader } from "./Header.style";
 import Logo from "../../assets/profile.webp";
+import { Button } from "../Button";
+import { Container } from "../Container";
+import { FiMenu, FiX } from "react-icons/fi";
+import { MenuContext } from "../../context/MenuContext";
+import { StyledHeader } from "./Header.style";
+import { useContext } from "react";
 
 export const Header = () => {
+  const { open, handleClick } = useContext(MenuContext);
+
   return (
     <StyledHeader>
       <Container className="header__container">
@@ -13,10 +18,10 @@ export const Header = () => {
           </figure>
           <span className="header__logo-text">David Almeida</span>
         </div>
-        <button type="button" className="header__menu-button center">
-          <FiMenu />
-        </button>
+        <Button size="sm" type="icon" onClick={handleClick}>
+          <span>{!open ? <FiMenu size={24} /> : <FiX size={24} />}</span>
+        </Button>
       </Container>
     </StyledHeader>
   );
-}
+};

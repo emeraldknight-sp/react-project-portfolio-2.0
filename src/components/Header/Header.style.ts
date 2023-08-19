@@ -1,9 +1,14 @@
 import styled from "styled-components";
 
 export const StyledHeader = styled.header`
-  background-color: var(--gray-4);
+  background-color: var(--white);
+  border: 2px solid var(--gray-4);
+  width: 100%;
   text-align: center;
   padding: 10px 0;
+
+  position: fixed;
+  z-index: 9999;
 
   .header__container {
     display: flex;
@@ -45,13 +50,5 @@ export const StyledHeader = styled.header`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-
-  .header__menu-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 1.5rem;
-    color: #333;
   }
 `;
