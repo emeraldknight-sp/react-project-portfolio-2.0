@@ -51,4 +51,10 @@ export const StyledHeader = styled.header`
     justify-content: center;
     align-items: center;
   }
+
+  .button--header {
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
 `;

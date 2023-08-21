@@ -3,6 +3,7 @@ import { Button } from "../Button";
 import { Container } from "../Container";
 import { FiMenu, FiX } from "react-icons/fi";
 import { MenuContext } from "../../context/MenuContext";
+import { Navbar } from "../Navbar";
 import { StyledHeader } from "./Header.style";
 import { useContext } from "react";
 
@@ -18,7 +19,8 @@ export const Header = () => {
           </figure>
           <span className="header__logo-text">David Almeida</span>
         </div>
-        <Button size="sm" type="icon" onClick={handleClick}>
+        <Navbar />
+        <Button size="sm" onClick={handleClick} className="button--header">
           <span>{!open ? <FiMenu size={24} /> : <FiX size={24} />}</span>
         </Button>
       </Container>
