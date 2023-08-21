@@ -22,5 +22,29 @@ export const StyledFooter = styled.footer`
     line-height: var(--line-height-md);
   }
 
-  
+  .button--footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--brand-1);
+    border: 2px solid var(--white);
+    
+    transform: translate(-50%, -50%);
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    
+    position: relative;
+    bottom: 125%;
+    left: 50%;
+    
+    span {
+      color: var(--white);
+    }
+
+    &:hover {
+      background-color: var(--brand-2);
+      border: 1px solid var(--white);
+    }
+  }
 `;

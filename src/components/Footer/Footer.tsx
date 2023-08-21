@@ -9,10 +9,15 @@ export const Footer = () => {
     <StyledFooter>
       <Container>
         <p className="footer-text">👋 Obrigado por acessar!</p>
-        <Button type="footer" size="sm" onClick={scrollToTop}>
-          <MdOutlineKeyboardArrowUp size={32} />
+        <Button
+          onClick={scrollToTop}
+          className="button--footer"
+        >
+          <span>
+            <MdOutlineKeyboardArrowUp size={32} />
+          </span>
         </Button>
       </Container>
     </StyledFooter>
   );
-}
+};
