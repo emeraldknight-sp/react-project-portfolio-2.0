@@ -2,15 +2,15 @@ import styled from "styled-components";
 
 export const StyledButton = styled.button`
   display: inline-block;
-  height: 48px;
-  padding: 8px 24px;
-  border: 2px solid var(--gray-5);
+  width: 40px;
+  height: 40px;
+  padding: 5px;
   border-radius: 8px;
 
-  font-size: var(--text-md);
+  font-size: var(--text-xs);
   font-family: var(--inter-tipography);
   font-weight: 600;
-  line-height: var(--line-height-md);
+  line-height: var(--line-height-xs);
 
   transition: background-color 0.3s, color 0.3s;
 
@@ -29,8 +29,22 @@ export const StyledButton = styled.button`
     justify-content: center;
     align-items: center;
   }
+  
+  &.button--default {
+    background-color: var(--white);
+    border: 2px solid var(--gray-5);
 
-  &.button--contained,
+    span,
+    p {
+      color: var(--gray-1);
+    }
+
+    &:hover {
+      background-color: var(--gray-5);
+      border: 2px solid var(--gray-5);
+    }
+  }
+
   &.button--primary {
     background-color: var(--brand-1);
     border: 2px solid var(--brand-1);
@@ -43,70 +57,6 @@ export const StyledButton = styled.button`
     &:hover {
       background-color: var(--brand-2);
       border: 2px solid var(--brand-2);
-    }
-  }
-
-  &.button--text {
-    background-color: var(--transparent);
-    border: 2px solid var(--transparent);
-
-    span,
-    p {
-      color: var(--gray-1);
-    }
-
-    &:hover {
-      background-color: var(--gray-5);
-    }
-  }
-
-  &.button--icon {
-    background-color: var(--white);
-    border: 1px solid var(--gray-5);
-    width: 48px;
-    height: 48px;
-
-    span,
-    p {
-      color: var(--gray-1);
-    }
-
-    &:hover {
-      background-color: var(--gray-5);
-    }
-  }
-
-  &.button--footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 40px;
-    height: 40px;
-    transform: translate(-50%, -50%);
-    background-color: var(--brand-1);
-    border: 1px solid var(--white);
-    color: var(--white);
-    border-radius: 50%;
-    cursor: pointer;
-    outline: none;
-
-    position: relative;
-    bottom: 125%;
-    left: 50%;
-  }
-
-  &.button--outlined {
-    background-color: var(--white);
-    border: 2px solid var(--gray-5);
-
-    span,
-    p {
-      color: var(--gray-1);
-    }
-
-    &:hover {
-      background-color: var(--gray-5);
     }
   }
 
@@ -125,32 +75,25 @@ export const StyledButton = styled.button`
     }
   }
 
-  &.button--tertiary {
-    background-color: var(--white);
-    border: 2px solid var(--white);
-
-    span,
-    p {
-      color: var(--gray-1);
-    }
-
-    &:hover {
-      background-color: var(--gray-5);
-      border: 2px solid var(--gray-5);
-    }
+  &.button--disabled {
   }
 
   &.button--size-sm {
+    width: 48px;
+    height: 48px;
     padding: 5px;
     font-size: var(--text-sm);
   }
 
   &.button--size-md {
     width: 50%;
+    height: 48px;
+    font-size: var(--text-md);
   }
 
   &.button--size-lg {
     width: 100%;
+    height: 48px;
     padding: 10px;
     font-size: var(--text-lg);
 

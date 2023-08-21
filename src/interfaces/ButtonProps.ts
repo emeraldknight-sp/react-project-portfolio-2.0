@@ -1,8 +1,7 @@
 export interface ButtonProps {
   children: React.ReactNode;
-  size?: "sm" | "md" | "lg";
-  type?: "text" | "contained" | "outlined" | "icon" | "footer";
-  color?: "primary" | "secondary" | "tertiary";
+  size?: "default" | "sm" | "md" | "lg";
+  color?: "default" | "primary" | "secondary" | "disabled";
   onClick?: () => void;
   className?: string;
 }

@@ -3,13 +3,12 @@ import { StyledButton } from "./Button.style";
 
 export const Button = ({
   children,
-  size = "md",
-  type = "text",
-  color,
+  size = "default",
+  color = "default",
   onClick,
   className,
 }: ButtonProps) => {
-  const buttonClassName = `button--size-${size} button--${type} button--${color} ${
+  const buttonClassName = `button--size-${size} button--${color} ${
     className || ""
   }`;
 
