@@ -8,7 +8,7 @@ export const StyledSlideMenu = styled.nav`
   transition: transform 0.3s ease-in-out;
 
   position: fixed;
-  top: 72px;
+  top: 64px;
   z-index: 0;
 
   &.open {

@@ -13,7 +13,7 @@ export const SlideMenu = () => {
       <Container>
         <div className="slide-menu">
           <div className="slide-menu__element-group">
-            <Button size="md" type="icon">
+            <Button size="md">
               <a
                 href="https://github.com/emeraldknight-sp"
                 className="slide-menu__button-link"
@@ -25,7 +25,7 @@ export const SlideMenu = () => {
                 </span>
               </a>
             </Button>
-            <Button size="md" type="icon">
+            <Button size="md">
               <a
                 href="https://www.instagram.com/davidalmeidadev/"
                 className="slide-menu__button-link"
@@ -37,7 +37,7 @@ export const SlideMenu = () => {
                 </span>
               </a>
             </Button>
-            <Button size="md" type="icon">
+            <Button size="md">
               <a
                 href="https://www.linkedin.com/in/davidalmeidadev"
                 className="slide-menu__button-link"
@@ -50,7 +50,7 @@ export const SlideMenu = () => {
               </a>
             </Button>
           </div>
-          <Button size="lg" type="contained">
+          <Button size="lg" color="primary">
             <a
               href="https://api.whatsapp.com/send?phone=5586988641961&text=Ol%C3%A1%20David%2C%20tudo%20bem%3F%20"
               className="slide-menu__button-link"
