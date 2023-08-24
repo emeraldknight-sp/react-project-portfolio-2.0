@@ -22,8 +22,6 @@ export const App = () => {
   const technologies = useContext(TechnologiesContext);
   const projects = useContext(ProjectsContext);
 
-  console.log(projects);
-
   return (
     <div>
       <SlideMenu />
@@ -47,15 +45,12 @@ export const App = () => {
               </div>
               <div className="presentation__article-button-group">
                 <Button
-                  type="text"
-                  color="tertiary"
                   size="lg"
                   onClick={() => scrollToAnchor("projects")}
                 >
                   <span>Projetos</span>
                 </Button>
                 <Button
-                  type="contained"
                   color="primary"
                   size="lg"
                   onClick={() => scrollToAnchor("technologies")}
@@ -75,6 +70,9 @@ export const App = () => {
               <ul className="technologies__article-list-item">
                 {technologies.map((element, index) => (
                   <li key={index} className="technologies__article-item">
+                    {/* <div className="technologies__article-tag">
+                      <span className="technologies__article-text">{element.name}</span>
+                    </div> */}
                     {element.icon}
                   </li>
                 ))}
@@ -95,7 +93,7 @@ export const App = () => {
                   trocar ideias e conversar sobre o processo criativo. Vamos nos
                   conectar lá também!
                 </p>
-                <Button size="md" type="contained">
+                <Button size="md" color="primary">
                   <a
                     href="https://www.instagram.com/davidalmeidadev/"
                     target="_blank"

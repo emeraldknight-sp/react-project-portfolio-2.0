@@ -77,7 +77,7 @@ export const StyledTechnologiesSection = styled.section`
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
-    padding: 30px 0 50px;
+    padding: 50px 0 30px;
     gap: 40px;
   }
 
@@ -92,20 +92,52 @@ export const StyledTechnologiesSection = styled.section`
   .technologies__article-list-item::-webkit-scrollbar-thumb {
     background-color: var(--gray-2);
     border-radius: 20px;
-    border: 5px solid var(--gray-4); 
+    border: 5px solid var(--gray-4);
   }
 
   .technologies__article-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--white);
     border: 1px solid var(--white);
     border-radius: 8px;
     padding: 20px 55px;
+    cursor: pointer;
 
     svg {
       width: 64px;
       height: 64px;
       fill: var(--gray-2);
     }
+
+    .technologies__article-tag {
+      visibility: hidden;
+      transition: transform 0.3s ease-in-out, display 0.3s ease-in-out;
+
+      background-color: var(--white);
+      border-radius: 4px;
+      padding: 4px 12px;
+    }
+
+    &:hover {
+      .technologies__article-tag {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        visibility: visible;
+        transform: translateY(-200%);
+      }
+    }
+  }
+
+  .technologies__article-text {
+    font-size: var(--text-xs);
+    font-family: var(--lexend-tipography);
+    font-weight: 400;
+    line-height: var(--line-height-xs);
+    color: var(--gray-1);
   }
 `;
 
