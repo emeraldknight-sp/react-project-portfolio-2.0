@@ -1,55 +1,51 @@
 import { createContext } from "react";
-import { ProjectsContextProps, ProjectsProviderProps } from "../interfaces/ProjectsProps";
+import {
+  ProjectsContextProps,
+  ProjectsProviderProps,
+} from "../interfaces/ProjectsProps";
 
 export const ProjectsContext = createContext<ProjectsContextProps[]>([]);
 
 export const ProjectsProvider = ({ children }: ProjectsProviderProps) => {
   const projects = [
     {
-      name: "Pokenext | APIs",
-      urlVercel: "https://next-pokenext.vercel.app/",
-      urlGitHub: "https://github.com/emeraldknight-sp/next-pokenext",
-      techs: ["Next", "React", "React-icons", "CSS Modules", "Sharp"],
+      name: "The Mandalorian | APIs",
+      urlVercel: "next-project-the-mandalorian.vercel.app",
+      urlGitHub:
+        "https://github.com/emeraldknight-sp/next-project-the-mandalorian",
+      techs: ["Next", "SASS", "React-icons", "React-lottie"],
       description:
-        "Um projeto incrível consumindo uma API com dados de Pokemons!",
+        "Um projeto front-end que faz uso do consumo de API para mostrar dados dinâmicamente ao visitante!",
+    },
+    {
+      name: "Metin 2 | SEO",
+      urlVercel: "next-project-metin2.vercel.app",
+      urlGitHub: "https://github.com/emeraldknight-sp/next-project-metin2",
+      techs: ["Next", "Tailwind CSS", "React-icons"],
+      description:
+        "Um website feito com um poderoso framework de desenvolvimento web voltado para alto desempenho e ranqueamento no SEO.",
+    },
+    {
+      name: "One Piece | Reatividade",
+      urlVercel: "https://react-project-one-piece.vercel.app",
+      urlGitHub: "https://github.com/emeraldknight-sp/react-project-one-piece",
+      techs: ["React", "Styled-components", "Typescript"],
+      description:
+        "Um projeto front-end feito para aprensentar informações de acordo com a interação do usuário apresentando informações de forma dinâmica e instantânea!",
     },
     {
       name: "Mundo Invertido | Switch Mode",
-      urlVercel: "https://semana-frontend-mundo-invertido-nine.vercel.app/",
-      urlGitHub:
-        "https://github.com/emeraldknight-sp/semana-frontend-mundo-invertido",
-      techs: ["HTML5", "CSS3", "JS"],
-      description: "Um site temático com uma newsletter usando HTML, CSS e JS.",
-    },
-    {
-      name: "Project Burguer | e-Commerce",
-      urlVercel: "https://react-ecommerce-kenzie-burguer.vercel.app",
-      urlGitHub:
-        "https://github.com/emeraldknight-sp/react-ecommerce-kenzie-burguer",
+      urlVercel: "https://react-project-stranger-things.vercel.app/",
+      urlGitHub: "https://github.com/emeraldknight-sp/react-project-stranger-things",
       techs: [
         "React",
-        "React-dom",
-        "React-hook-form",
-        "React-router-dom",
-        "Styled-components",
-        "Yup",
+        "SASS",
+        "CSS Modules",
+        "React-hot-toast",
+        "Firebase Firestore"
       ],
       description:
-        "Um e-commerce feito com React para testar habilidades de componentização!",
-    },
-    {
-      name: "Rocket Pay | Logic",
-      urlVercel: "https://react-add-payment-method.vercel.app/",
-      urlGitHub: "https://github.com/emeraldknight-sp/react-add-payment-method",
-      techs: [
-        "React",
-        "React-imask",
-        "React-toastify",
-        "Styled-components",
-        "Yup",
-      ],
-      description:
-        "Um incrível projeto para testar novas tecnologias criando uma interface para adicionar um método de pagamento.",
+        "Um website incrível feito com React estilizado pela combincação de SASS com CSS Modules para aprensentar a série Stranger Things e colher leads através de um formulário que envia dados ao Firestore.",
     },
     {
       name: "Project Weather | Weather App",
