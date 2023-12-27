@@ -10,7 +10,7 @@ export const ProjectsProvider = ({ children }: ProjectsProviderProps) => {
   const projects = [
     {
       name: "The Mandalorian | APIs",
-      urlVercel: "next-project-the-mandalorian.vercel.app",
+      urlVercel: "https://next-project-the-mandalorian.vercel.app",
       urlGitHub:
         "https://github.com/emeraldknight-sp/next-project-the-mandalorian",
       techs: ["Next", "SASS", "React-icons", "React-lottie"],
@@ -19,7 +19,7 @@ export const ProjectsProvider = ({ children }: ProjectsProviderProps) => {
     },
     {
       name: "Metin 2 | SEO",
-      urlVercel: "next-project-metin2.vercel.app",
+      urlVercel: "https://next-project-metin2.vercel.app",
       urlGitHub: "https://github.com/emeraldknight-sp/next-project-metin2",
       techs: ["Next", "Tailwind CSS", "React-icons"],
       description:

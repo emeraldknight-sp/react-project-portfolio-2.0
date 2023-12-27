@@ -128,7 +128,7 @@ export const App = () => {
                           className="projects__article-item__link"
                           href={element.urlGitHub}
                           target="_blank"
-                          rel="noreferrer"
+                          rel="noreferrer noopener"
                         >
                           <FaGithub />
                           <span>GitHub Code</span>
@@ -137,7 +137,7 @@ export const App = () => {
                           className="projects__article-item__link"
                           href={element.urlVercel}
                           target="_blank"
-                          rel="noreferrer"
+                          rel="noreferrer noopener"
                         >
                           <FaShare />
                           <span>Aplicação</span>
